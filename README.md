@@ -1,2 +1,5 @@
-# ML-Group27
-Source code and github pages for our ML project spring 2020
+# Sentiment Analysis of Airline Twitter Data
+
+### Anuraag Govindarajan, Edward Han, Parker Bryant, Sai Gogineni
+
+
