@@ -2,4 +2,4 @@
 
 ### Anuraag Govindarajan, Edward Han, Parker Bryant, Sai Gogineni
 
-![Test](images/sentimentstategraph.png)
+![Test](Images/sentimentstategraph.png)
