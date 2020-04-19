@@ -2,16 +2,6 @@
 
 ### Anuraag Govindarajan, Edward Han, Parker Bryant, Sai Gogineni
 
-![Test](Images/sentimentstategraph.png)
-
-| tweet_id | airline_sentiment |	airline_sentiment_confidence |	negativereason |	negativereason_confidence |	airline |	retweet_count |	text |	tweet_created |	tweet_location |	user_timezone |	new_text | new_text2 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 570306133677760513 |	1 |	1.0000 |	NaN |	NaN |	Virgin America |	0 |	@VirginAmerica Need to change reservation. Hav... |	2015-02-24 11:35:52 -0800 |	NaN |	Eastern Time (US & Canada) |	[@VirginAmerica, Need, change, reservation. h...] | [AT_USER, need, change, reservation, virgin, c...] |
-
-| airline_sentiment | new_text2 |
-| --- | --- |
-| 1 | [AT_USER, need, change, reservation, virgin, c...] |
-
 #### Motivation
 
 Twitter (social media) is an abundant source of information with high level figures like the President of the United States using it as a platform to spread their policies and beliefs. On a lower level, there are 321 million active users as of February 2019.
@@ -24,7 +14,9 @@ Our specific project deals with sentiment surrounding airlines. We are trying to
 
 We picked our dataset from Kaggle. It seemed favorable because it had a decent number of tweets, each one with an accompanying sentiment. We were able to use this as a base for our supervised learning project. The dataset itself has approximately 14,000 tweets, as well as 15 features for each tweet. There were some strange features that we decided to discard from our analysis immediately, such as “negative reason gold” and “airline sentiment gold”, and there were some features we simply decided had no impact on the sentiment of the tweet, such as the name of the person who made the tweet. The features we were left with after filtering included Tweet ID, Airline Sentiment, Airline Sentiment Confidence, Negative Reason, Airline, Retweet Count, Text, User Timezone, and Date/Time of Tweet. Upon further analysis, we determined that the features retweet count and airline sentiment confidence had little to no correlation with actual airline sentiment, so we decided to drop those from our analysis as well. This still left us with plenty of features to conduct analysis with, and it allowed us to experiment with data visualization and correlation calculations to determine which features had the most impact on sentiment.
 
-(Include some visualizations here)
+You can see below a graph that illustrates the correlation between airline sentiment and airline sentiment confidence, another feature provided in the dataset:
+
+![Test](Images/samplecorr.png)
 
 #### Approach
 
@@ -33,6 +25,19 @@ We decided to use the Naive Bayes Classifier to classify our tweets into negativ
 #### Preprocessing
 
 This is kind of like the tweet cleaning section. When we are looking at tweets trying to determine sentiment, we generally know what is important and what can be filtered out with little to no effect. Words are the most important part of the tweets; they give the most insight into the potential sentiment, whereas something like punctuation does not. We cannot determine if an exclamation point is being used in a negative or positive sense without context, which is provided by words. We applied the preprocessing to the tweets in both the training and the test datasets. Our tweet preprocessing can be seen in the process_tweet function; it includes converting all text to lowercase, removing URLs, removing usernames, removing #s, and removing repeated characters in words. Additionally, there is a universal list of stop words, such as “the” or “and”, that are also removed from the tweets in the preprocessing section.
+
+Below, you can see the effect of preprocessing on the actual text of the tweet. The column labeled "text" contains the original text, while the column lableed "new_text_2" contains the finalized, preprocessed tweet.
+
+
+![Test](Images/sentimentstategraph.png)
+
+| tweet_id | airline_sentiment |	airline_sentiment_confidence |	negativereason |	negativereason_confidence |	airline |	retweet_count |	text |	tweet_created |	tweet_location |	user_timezone |	new_text | new_text2 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 570306133677760513 |	1 |	1.0000 |	NaN |	NaN |	Virgin America |	0 |	@VirginAmerica Need to change reservation. Hav... |	2015-02-24 11:35:52 -0800 |	NaN |	Eastern Time (US & Canada) |	[@VirginAmerica, Need, change, reservation. h...] | [AT_USER, need, change, reservation, virgin, c...] |
+
+| airline_sentiment | new_text2 |
+| --- | --- |
+| 1 | [AT_USER, need, change, reservation, virgin, c...] |
 
 #### Building the Vocabulary and Creating Feature Vectors
 
