@@ -53,7 +53,7 @@ Again, we were able to use the built in Naive Bayes Classifier in the nltk libra
 
 We split our data into train and test four different ways: (90% train, 10% test), (80% train, 20% test), (70% train, 30% test), and (60% train, 40% test). Below we show the results of the different experiments:
 
-(Include some visualizations here)
+![9010](Images/9010/vam90.png)
 
 The main way we evaluated our approach was through accuracy. Our original dataset has a sentiment value of negative, neutral, or positive for every tweet in the dataset. Although we created a test dataset that cannot see the sentiment for each tweet, we can still match the predicted sentiment with the sentiment for that tweet in the original dataset. We judged our performance based on the accuracy of the Naive Bayes Classification of the tweets. This calculation was simply the number of tweets in the test set in which the predicted sentiment equalled the original, actual sentiment divided by the total number of tweets in the test set.
 
