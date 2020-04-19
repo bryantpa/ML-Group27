@@ -54,7 +54,7 @@ The table above includes our results. As you can see the accuracies are in the m
 
 While our main approach included the Naive Bayes Classifier and a lot of data preprocessing, we wanted to compare our methods to another approach, so we created a simple SVM Classifier using Python’s Sci-kit Learn library. We used the built-in vectorizer to vectorize all of the tweets in the dataset, and we used the same train/test split method. Accuracy was calculated the same way, so we were able to easily compare the results of predicting sentiment using a Naive Bayes Classifier and using a Support Vector Machine. You can see the SVM below:
 
-(Include a visualization here)
+![Test](Images/svmsnippet.png)
 
 #### Conclusion
 
