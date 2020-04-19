@@ -7,6 +7,8 @@
 
 Twitter (social media) is an abundant source of information with high level figures like the President of the United States using it as a platform to spread their policies and beliefs. On a lower level, there are 321 million active users as of February 2019.
 
+![tweets](Images/tweetexample.png)
+
 Social Media and big data go hand-in-hand because of the amount of user-generated content. Using data from a platform such as Twitter, we are exposed to a broad range of topics, which allows us to go down several possible paths for analysis. Several people in the past have worked on mining Twitter tweets. For example, some projects include analyzing the sentiment surrounding a movie on twitter and comparing that sentiment to actual critic and user reviews of the same movie.
 
 Our specific project deals with sentiment surrounding airlines. We are trying to answer the following question: Is there a reliable way to categorize the sentiment of massive amounts of tweets regarding a certain subject? If we can predict sentiment of a given tweet or group of tweets about an airline to a reasonable degree of accuracy, our project could potentially be useful for both PR companies and customers. Both will have a better understanding of what airlines need to have to be satisfactory. If we are successful in achieving these goals, our project could be generalizable to determine twitter sentiment about any corporation, not just airlines.
