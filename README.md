@@ -2,6 +2,8 @@
 
 ### Anuraag Govindarajan, Edward Han, Parker Bryant, Sai Gogineni
 
+![Test](Images/wordcloud.png)
+
 #### Motivation
 
 Twitter (social media) is an abundant source of information with high level figures like the President of the United States using it as a platform to spread their policies and beliefs. On a lower level, there are 321 million active users as of February 2019.
