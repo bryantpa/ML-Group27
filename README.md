@@ -66,3 +66,7 @@ Our project elucidates how we can use Natural Language Processing to make comput
 
 #### Citations
 
+1. Al-Masri, Anas. “Creating The Twitter Sentiment Analysis Program in Python with Naive Bayes Classification.” Medium,          Towards Data Science, 13 Feb. 2019, towardsdatascience.com/twitter-api-and-nlp-7a386758eb31.
+2. Real Time Sentiment Analysis Of Twitter Posts - IEEE Conference Publication, ieeexplore.ieee.org/document/8768774.
+3. Analyzing Sentiments Expressed on Twitter by UK Energy Company Consumers - IEEE Conference Publication,                      ieeexplore.ieee.org/document/8554619.
+4. Jen-Ton: A Framework to Enhance the Accuracy of Aspect Level Sentiment Analysis in Big Data - IEEE Conference Publication,   ieeexplore.ieee.org/document/8365391.
