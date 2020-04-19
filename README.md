@@ -28,9 +28,6 @@ This is kind of like the tweet cleaning section. When we are looking at tweets t
 
 Below, you can see the effect of preprocessing on the actual text of the tweet. The column labeled "text" contains the original text, while the column lableed "new_text_2" contains the finalized, preprocessed tweet.
 
-
-![Test](Images/sentimentstategraph.png)
-
 | tweet_id | airline_sentiment |	airline_sentiment_confidence |	negativereason |	negativereason_confidence |	airline |	retweet_count |	text |	tweet_created |	tweet_location |	user_timezone |	new_text | new_text2 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 570306133677760513 |	1 |	1.0000 |	NaN |	NaN |	Virgin America |	0 |	@VirginAmerica Need to change reservation. Hav... |	2015-02-24 11:35:52 -0800 |	NaN |	Eastern Time (US & Canada) |	[@VirginAmerica, Need, change, reservation. h...] | [AT_USER, need, change, reservation, virgin, c...] |
