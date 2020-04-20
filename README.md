@@ -3,9 +3,9 @@
 ### Anuraag Govindarajan, Edward Han, Parker Bryant, Sai Gogineni
 
 
-#### Motivation
+## Motivation
 
-Twitter (social media) is an abundant source of information with high level figures like the President of the United States using it as a platform to spread their policies and beliefs. On a lower level, there are 321 million active users as of February 2019.
+Twitter (social media) is an abundant source of information with high level figures such as the President of the United States using it as a platform to spread their policies and beliefs. There are 321 million active users as of February 2019 and combined these users generate ~6000 tweets per second. The short (280 characters), text based, nature of the data makes it ripe for analysis on a broad range of topics. 
 
 ![tweets](Images/tweetexample.png)
 
