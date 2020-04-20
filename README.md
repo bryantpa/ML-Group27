@@ -73,6 +73,8 @@ We also wanted to see the average sentiments for all the airlines. We assigned n
 
 Upon observation of this table, it is clear that all of the airlines have an overall sentiment that leans toward negative, sometimes very heavily. This is in part because of voluntary response bias. People only feel the need to tweet about a particular airline because they have a strong opinion about it, and this opinion is negative most of the time.
 
+![Test](Images/svmconfusion.png) ![Test](Images/nbconfusion.png)
+
 While our main approach included the Naive Bayes Classifier and a lot of data preprocessing, we wanted to compare our methods to another approach, so we created a simple Support Vector Machine SVM Classifier using Python’s Sci-kit Learn library. We used the built-in vectorizer to vectorize all of the tweets in the dataset, and we used the same train/test split method. Accuracy was calculated the same way, so we were able to easily compare the results of predicting sentiment using a Naive Bayes Classifier and using a Support Vector Machine. You can the comparison of accuracies of SVM and Naive Bayes below. It appeared that the SVM was consistently more accurate.
 
 ![Test](Images/comparison.png)
