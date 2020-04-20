@@ -13,7 +13,7 @@ Social Media and big data go hand-in-hand because of the amount of user-generate
 
 Our specific project deals with sentiment surrounding airlines. We are trying to answer the following question: Is there a reliable way to categorize the sentiment of massive amounts of tweets regarding a certain subject? If we can predict sentiment of a given tweet or group of tweets about an airline to a reasonable degree of accuracy, our project could potentially be useful for both PR companies and customers. Both will have a better understanding of what airlines need to have to be satisfactory. If we are successful in achieving these goals, our project could be generalizable to determine twitter sentiment about any corporation, not just airlines.
 
-#### Dataset
+## Dataset
 
 ![Test](Images/wordcloud.png)
 
@@ -25,7 +25,7 @@ You can see below a graph that illustrates the correlation between airline senti
 
 ![Test](Images/samplecorr.png)
 
-#### Approach
+## Approach
 
 We decided to use the Naive Bayes Classifier to classify our tweets into negative, neutral, or positive categories. The Naive Bayes Classifier relies on Bayes Theorem and probabilistic known background to calculate posterior probability. It is a specific form of Natural Language Processing, which combines AI and computational linguistics to help computers understand human patterns of speech. Ours is a supervised learning approach. Basically, our process includes preprocessing the data, building a vocabulary, creating feature vectors for each word, training the Naive Bayes Classifier on these feature vectors, and finally testing the remaining tweets using the trained Naive Bayes Classifier.
 
@@ -51,7 +51,7 @@ This step starts with creating a list of all the words in our training set. Then
 
 Again, we were able to use the built in Naive Bayes Classifier in the nltk library of Python. We trained this classifier on the word feature vectors we calculated in the previous step, using only the training split of the data. This code can take several minutes to execute. Once the classifier is trained, we can use its classify function to predict the sentiment labels of the tweets in the test data. This code can also take several minutes to execute.
 
-#### Experiments/Results
+## Experiments/Results
 
 We split our data into train and test four different ways: (90% train, 10% test), (80% train, 20% test), (70% train, 30% test), and (60% train, 40% test). Below we show the results of the different experiments (These results show the distribution of sentiment calculated by our Naive Bayes Model for two of the six airlines in the dataset):
 
@@ -77,7 +77,7 @@ While our main approach included the Naive Bayes Classifier and a lot of data pr
 
 ![Test](Images/comparison.png)
 
-#### Conclusion
+## Conclusion
 
 Our project elucidates how we can use Natural Language Processing to make computerized conclusions about text. Once more accurate models are created, the applications will be incredibly broad and effective. The airline industry is only one category out of countless that can benefit from Machine Learning Models such as this one. With the model we’ve created here, if it was given the appropriate training data, it should be able to use the same methods and generate sentiment predictions for any topic, whether it be airlines, cars companies, hospitals, coffee shops, etc.
 
