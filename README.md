@@ -65,7 +65,7 @@ The main way we evaluated our approach was through accuracy. Our original datase
 
 ![Test](Images/accuracies.png)
 
-The table above includes our results. As you can see the accuracies are in the mid to high 70’s for the most part. For perspective, if our model were completely random, or if it predicted the same sentiment for each tweet, the accuracy would be ~33%, so we consider our accuracies a significant improvement, though far from perfect. This simple metric also makes it easy to evaluate and compare other methods of classification. For example if we were to plug our preprocessed data into a Support Vector Machine instead of a Naive Bayes Classifier, we could simply compare our accuracies to see which Machine Learning Model yields better results.
+The table above includes our results. As you can see the accuracies are in the mid to high 70’s for the most part. For perspective, if our model were completely random, the accuracy would be ~33%, so we consider our accuracies a significant improvement, though far from perfect. This simple metric also makes it easy to evaluate and compare other methods of classification. For example if we were to plug our preprocessed data into a Support Vector Machine instead of a Naive Bayes Classifier, we could simply compare our accuracies to see which Machine Learning Model yields better results.
 
 We also wanted to see the average sentiments for all the airlines. We assigned numerical values to each sentiment, where "negative" = 0, "neutral" = 1, and "positive" = 2, and we used these numbers to determine average sentiment for each airline. The results are below.
 
