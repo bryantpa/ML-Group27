@@ -95,3 +95,4 @@ Our project elucidates how we can use Natural Language Processing to make comput
 2. Real Time Sentiment Analysis Of Twitter Posts - IEEE Conference Publication, ieeexplore.ieee.org/document/8768774.
 3. Analyzing Sentiments Expressed on Twitter by UK Energy Company Consumers - IEEE Conference Publication,                      ieeexplore.ieee.org/document/8554619.
 4. Jen-Ton: A Framework to Enhance the Accuracy of Aspect Level Sentiment Analysis in Big Data - IEEE Conference Publication,   ieeexplore.ieee.org/document/8365391.
+5. Pang, Bo, et al. “Thumbs up? Sentiment Classification Using Machine Learning Techniques.” Association for Computational Linguistics, July 2002.
