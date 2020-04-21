@@ -98,8 +98,6 @@ Sensitivity: .848
 Specificity: .827
 Accuracy: .833
 
-Naive Bayes
-
 ## Conclusion and Possible Improvements
 
 Our project elucidates how we can use Natural Language Processing to make computerized conclusions about text. Once more accurate models are created, the applications will be incredibly broad and effective. The airline industry is only one category out of countless that can benefit from Machine Learning Models such as this one. With the model we’ve created here, if it was given the appropriate training data, it should be able to use the same methods and generate sentiment predictions for any topic, whether it be airlines, cars companies, hospitals, coffee shops, etc.
