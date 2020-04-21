@@ -84,6 +84,21 @@ The table below includes our results. As you can see the accuracies are in the m
 #### Naïve-Bayes Confusion Matrix
 ![Test](Images/nbconfusion.png)
 
+#### Turning it into a Binary Classification Problem
+
+To better deal with our skew and because neutral tweets are more similary to positive we considered it as a binary classification problem where negative tweets were 1 and non-negative tweets were 0.
+
+SVM: 
+Sensitivity: .852
+Specificity: .848
+Accuracy: .849
+
+NB:
+Sensitivity: .848
+Specificity: .827
+Accuracy: .833
+
+Naive Bayes
 
 ## Conclusion and Possible Improvements
 
