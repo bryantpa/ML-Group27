@@ -63,8 +63,6 @@ We split our data into train and test four different ways: (90% train, 10% test)
 
 The main way we evaluated our approach was through accuracy. Our original dataset has a sentiment value of negative, neutral, or positive for every tweet in the dataset. Although we created a test dataset that cannot see the sentiment for each tweet, we can still match the predicted sentiment with the sentiment for that tweet in the original dataset. We judged our performance based on the accuracy of the Naive Bayes Classification of the tweets. This calculation was simply the number of tweets in the test set in which the predicted sentiment equalled the original, actual sentiment divided by the total number of tweets in the test set.
 
-The table below includes our results. As you can see the accuracies are in the mid to high 70’s for the most part for both Naive Bayes and SVM. For perspective, if our model were completely random, the accuracy would be ~33%, so we consider our accuracies a significant improvement, though far from perfect. This simple metric also makes it easy to evaluate and compare other methods of classification. For example if we were to plug our preprocessed data into a Support Vector Machine instead of a Naive Bayes Classifier, we could simply compare our accuracies to see which Machine Learning Model yields better results.
-
 We also wanted to see the average sentiments for all the airlines. We assigned numerical values to each sentiment, where "negative" = 0, "neutral" = 1, and "positive" = 2, and we used these numbers to determine average sentiment for each airline. The results are below.
 
 ![Test](Images/averagesentiments.png)
@@ -72,6 +70,8 @@ We also wanted to see the average sentiments for all the airlines. We assigned n
 Upon observation of this table, it is clear that all of the airlines have an overall sentiment that leans toward negative, sometimes very heavily. This is in part because of voluntary response bias. People only feel the need to tweet about a particular airline because they have a strong opinion about it, and this opinion is negative most of the time.
 
 While our main approach included the Naive Bayes Classifier and a lot of data preprocessing, we wanted to compare our methods to another approach, so we created a simple Support Vector Machine SVM Classifier using Python’s Sci-kit Learn library. We used the built-in vectorizer to vectorize all of the tweets in the dataset, and we used the same train/test split method. Accuracy was calculated the same way, so we were able to easily compare the results of predicting sentiment using a Naive Bayes Classifier and using a Support Vector Machine. You can the comparison of accuracies of SVM and Naive Bayes below. It appeared that the SVM was consistently more accurate.
+
+The table below includes our results. As you can see the accuracies are in the mid to high 70’s for the most part for both Naive Bayes and SVM. For perspective, if our model were completely random, the accuracy would be ~33%, so we consider our accuracies a significant improvement, though far from perfect. This simple metric also makes it easy to evaluate and compare other methods of classification. For example if we were to plug our preprocessed data into a Support Vector Machine instead of a Naive Bayes Classifier, we could simply compare our accuracies to see which Machine Learning Model yields better results.
 
 ![Test](Images/accuracies2.png)
 
