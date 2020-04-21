@@ -85,9 +85,11 @@ The table below includes our results. As you can see the accuracies are in the m
 ![Test](Images/nbconfusion.png)
 
 
-## Conclusion
+## Conclusion and Possible Improvements
 
 Our project elucidates how we can use Natural Language Processing to make computerized conclusions about text. Once more accurate models are created, the applications will be incredibly broad and effective. The airline industry is only one category out of countless that can benefit from Machine Learning Models such as this one. With the model we’ve created here, if it was given the appropriate training data, it should be able to use the same methods and generate sentiment predictions for any topic, whether it be airlines, cars companies, hospitals, coffee shops, etc.
+
+Our accuracies were good, but definitely far from perfect. We think that we could optimize our model by possibly using a combination of Naive Bayes and SVM. This is because Naive Bayes and SVM each work better under certain circumstances, and if we can identify these circumstances, we can potentially figure out a combination that would optimize our accuracy.
 
 #### Citations
 
